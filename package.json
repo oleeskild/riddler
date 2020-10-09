@@ -1,0 +1,33 @@
+{
+  "name": "invitefoos",
+  "version": "1.0.0",
+  "description": "Send an invite to play foos... JAMstack demo site inspired by Phil Hawksworth's virtual lolly project",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "cross-env ELEVENTY_ENV=dev eleventy",
+    "build": "cross-env ELEVENTY_ENV=prod eleventy"
+  },
+  "keywords": [],
+  "author": "Ole Eskild Steensen",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "cross-env": "^6.0.3"
+  },
+  "dependencies": {
+    "axios": "^0.19.1",
+    "cssnano": "^4.1.10",
+    "dotenv": "^8.2.0",
+    "faunadb": "^2.10.2",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
+    "postcss": "^7.0.26",
+    "postcss-color-mix": "^1.1.0",
+    "postcss-import": "^12.0.1",
+    "postcss-mixins": "^6.2.3",
+    "postcss-simple-vars": "^5.0.2",
+    "precss": "^4.0.0",
+    "querystring": "^0.2.0",
+    "shortid": "^2.2.15"
+  }
+}

@@ -1,0 +1,55 @@
+---
+    title: Foos invite
+    layout: layouts/base.njk
+---
+
+{% block main %}
+<div class="flex-container">
+    <div class="foos-player">
+        {% include "svg/foos-player.svg" %}
+    </div>
+
+
+    <form name="greeting-card" method="POST" action="/new" class="flex-container" >
+        <div class="color-pickers">
+            <label class="color-picker-label">
+                <input id="headColor" type="color" name="headColor" class="color-picker" value="#00dbff" /> 
+            </label>
+
+            <label class="color-picker-label">
+                <input id="shirtColor" type="color" name="shirtColor" class="color-picker" value="#10e1a8" /> 
+            </label>
+            
+            <label class="color-picker-label">
+                <input id="shortColor" type="color" name="shortsColor" class="color-picker" value="#e95e4f" /> 
+            </label>
+
+            <label class="color-picker-label">
+                <input id="sockColor" type="color" name="sockColor" class="color-picker" value="#00dbff" /> 
+            </label>
+
+            <label class="color-picker-label">
+                <input id="ballColor" type="color" name="ballColor" class="color-picker" value="#ffcc6e" /> 
+            </label>
+        </div>
+
+        <div class="greeting-form">
+                <p>
+                    <label for="message">Riddle</label>
+                    <textarea cols="25" rows="10" id="riddle" name="riddle"></textarea>
+                </p>
+                <p>
+                    <input type="submit" value="Create QR Code">
+                </p>
+        </div>
+    </form>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{%set js%}
+{% include "js/core.js" %}
+{% include "js/colorPicker.js" %}
+{% endset %}
+<script> {{js | safe}} </script>
+{% endblock %}

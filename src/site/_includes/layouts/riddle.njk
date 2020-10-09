@@ -1,0 +1,33 @@
+{%extends 'layouts/base.njk' %}
+{% block extraStyle %}
+
+
+{%endblock%}
+
+{%block main%}
+<div class="flex-container">
+    
+    <div class="flex-container--column half">
+    <div class="greeting-card">
+        <h2>{{item.data.to}}</h2>
+        <div class="message">{{item.data.message}}</div>
+        <div class="from">- {{item.data.from}}</div>
+    </div>
+    </div>
+</div>
+<div class="flex-container">
+
+            <div class="flex-container--column half">
+                <div>Here's your QR code</div>
+                <div class="greeting-card">
+                    <div style="color: white"> 
+                      <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150%26data=https://${hostName}/riddle/${riddlePath}" /> 
+                      <div>https://{{hostName}}/riddle/{{riddlePath}}</div>
+                    </div>
+                </div>
+                <div class="greeting-card">
+                    <div class="message">{{riddle}}</div>
+                </div>
+            </div>
+          </div>
+{%endblock%}

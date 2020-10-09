@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css?family=Exo+2&display=swap");
+
+@import "_variables.css";
+
+
+body {
+    text-align: center;
+    background-color: $page-color;
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 24px;
+}
+header {
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    font-size: 64px;
+    width: fit-content;
+} 
+
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.foos-player {
+    text-align: center;
+    filter: drop-shadow(0px 0px 10px #000);
+    max-width: 350px;
+}
+
+.flex-container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+    &>div{
+        margin:15px;
+    }
+
+    &--columun{
+        flex-direction: column;
+    }
+}
+
+.half {
+    min-width: 50%;
+}
+
+.greeting-card {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0,0,0,.6);
+    align-items: center;
+    margin: 20px 0;
+    h2{
+        margin: 10px;
+
+    }
+    .message {
+        margin: 10px;
+    }
+    .from {
+        margin: 10px;
+        margin-left: 20px;
+    }
+}
+
+.greeting-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0,0,0,.6);
+}
+
+input[type=text], textarea {
+    background-color: #222;
+    color: white;
+    padding: 5px 3px;
+    font-size: 20px;
+    border: 1px solid white;
+}
+
+label.color-picker-label {
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    display: block;
+    overflow: hidden;
+    margin: 30px;
+}
+input[type=color]{
+    width: 85px;
+    height: 85px;
+    margin-top: -15px;
+    margin-left: -15px;
+}
+
+
+input[type=submit]:hover {
+    background-color: orange;
+}
+
+input[type=submit] {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid orange;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+label {
+    display: block;
+}
+
+.greeting-form {
+    min-width: 350px;
+}
