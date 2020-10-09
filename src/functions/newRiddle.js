@@ -10,6 +10,7 @@ const client = new faunadb.Client({
 });
 
 exports.handler = (event, context, callback) => {
+    console.log(event.formdata)
     const data = querystring.parse(event.body);
 
     const uniquePath = shortid.generate();
@@ -19,13 +20,13 @@ exports.handler = (event, context, callback) => {
 
     client.query(q.Create(q.Collection('riddles'), riddle))
         .then(response => {
-            console.log('success', response);
+            //console.log('success', response);
 
-            axios.post('https://api.netlify.com/build_hooks/5e1dff6d77168b4aa5ab6d2e')
+            axios.post('https://api.netlify.com/build_hooks/5f80b17b8a13604f8bbdf96e')
                 .then(function(response){
-                    console.log(response);
+                    //console.log(response);
                 }).catch(function(error){
-                    console.log(error);
+                    //console.log(error);
                 });
 
             return callback(null, {
