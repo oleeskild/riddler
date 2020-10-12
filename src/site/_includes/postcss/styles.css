@@ -66,9 +66,13 @@ h1 {
     .message {
         margin: 10px;
     }
-    .from {
+    .url{
         margin: 10px;
         margin-left: 20px;
+        @media (max-width: 700px) {
+            font-size: 16px;
+            overflow-wrap: anywhere;
+        }
     }
 }
 
