@@ -1,6 +1,4 @@
-# Foos Invites
-Invite your friends to a foos game by sending them an invite with a custom foos-player
+# Riddlr
+Create riddles and easily share them in the real world by using the generated QR-code.
 
-[https://foosinvite.vip/](https://foosinvite.vip/)
-
-(Demo site using the JAMstack. Inpired by Phil Hawkworth's [VLolly project](https://github.com/philhawksworth/virtual-lolly/) )
+(Forked from this project [Foos Invite](https://github.com/oleeskild/foos-invite) )
