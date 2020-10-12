@@ -1,4 +1,4 @@
-module.exports = ({riddle, riddlePath, hostName }) => {
+module.exports = ({riddle, riddlePath, hostName, imageLink }) => {
     return `
     
     <!DOCTYPE html>
@@ -12,7 +12,7 @@ module.exports = ({riddle, riddlePath, hostName }) => {
       <body>
         <div class="container">
           <header>
-            <h1 class="title">Foos invite</h1>
+            <h1 class="title">Riddlr</h1>
           </header>
     
           <div class="flex-container">
@@ -27,6 +27,7 @@ module.exports = ({riddle, riddlePath, hostName }) => {
                 </div>
                 <div class="greeting-card">
                     <div class="message">${riddle}</div>
+                    <img style="width: 100%;" src="${imageLink}" />
                 </div>
             </div>
           </div>

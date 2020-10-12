@@ -1,5 +1,5 @@
 ---
-    title: Foos invite
+    title: Riddlr
     layout: layouts/base.njk
 ---
 
@@ -10,16 +10,17 @@
         <div class="greeting-form">
                 <p>
                     <label for="message">Riddle</label>
-                    <textarea cols="25" rows="10" id="riddle" name="riddle"></textarea>
+                    <textarea cols="50" rows="10" id="riddle" name="riddle"></textarea>
                 </p>
                 <p>
                     <label for="image">Image</label>
-                    <div id="drop-area" class="dropzone" style="background: rgba(255,255,255,0.2); border">
-                      
-                    </div>
+                        <input id="image-upload" type="file" name="image" acccept="image/*" />
+                        <input id="image-link" type="hidden" name="imageLink" />
+                        <img style="display: none; width: 100%;" id="image-preview" />
                 </p>
                 <p>
-                    <input type="submit" value="Create QR Code">
+                    <div id="loading" style="display:none; margin-bottom: 5px;">Laster opp bilde...</div>
+                    <input id="submit-btn" type="submit" value="GET MY QR CODE">
                 </p>
         </div>
     </form>
@@ -30,7 +31,6 @@
 {%set js%}
 {% include "js/core.js" %}
 {% include "js/colorPicker.js" %}
-{% include "js/dropzone.min.js" %}
 {% include "js/fileUploader.js" %}
 {% endset %}
 <script> {{js | safe}} </script>
