@@ -10,7 +10,6 @@ const client = new faunadb.Client({
 });
 
 exports.handler = (event, context, callback) => {
-    console.log(event.formdata)
     const data = querystring.parse(event.body);
 
     const uniquePath = shortid.generate();

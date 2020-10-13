@@ -10,7 +10,9 @@
             <div class="flex-container--column half">
                 <div class="greeting-card">
                     <div class="message">{{item.data.riddle}}</div>
-                    <img style="width: 100%;" src="{{item.data.imageLink}}" />
+                    {% if item.data.imageLink.length > 0 %}
+                        <img style="width: 100%;" src="{{item.data.imageLink}}" />
+                    {% endif %} 
                 </div>
             </div>
           </div>
