@@ -22,7 +22,7 @@ module.exports = ({riddle, riddlePath, hostName, imageLink }) => {
                 <div class="greeting-card">
                     <div style="color: white"> 
                       <img src=" https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://${hostName}/riddle/${riddlePath}" /> 
-                      <div>https://${hostName}/riddle/${riddlePath}</div>
+                      <div class="url">https://${hostName}/riddle/${riddlePath}</div>
                     </div>
                 </div>
                 <div class="greeting-card">
