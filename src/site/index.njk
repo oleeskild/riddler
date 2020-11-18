@@ -6,7 +6,11 @@
 {% block main %}
 <div class="flex-container">
 
-    <form name="greeting-card" method="POST" action="/new" class="flex-container" >
+
+    <form name="greeting-card" method="POST" action="/new" class="flex-container riddlr-form" >
+        <div class="riddlr-hat">
+            {%include "svg/riddlr-hat.svg"%}
+        </div>
         <div class="greeting-form">
                 <p>
                     <label for="message">Your Riddle</label>

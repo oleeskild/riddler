@@ -15,7 +15,6 @@ header {
     justify-content: center;
     .header {
         max-width: 400px;
-        margin-bottom:-60px;
     }
 }
 h1 {
@@ -30,10 +29,16 @@ h1 {
     width: 90%;
 }
 
-.foos-player {
-    text-align: center;
-    filter: drop-shadow(0px 0px 10px #000);
-    max-width: 350px;
+.riddlr-form {
+    position: relative;
+}
+
+.riddlr-hat {
+    position: absolute;
+    top:0;
+    right: 0;
+    max-width: 50%;
+    transform: rotate(45deg) translate(7%, -70%);
 }
 
 .flex-container{
