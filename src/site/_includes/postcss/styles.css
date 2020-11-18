@@ -7,12 +7,16 @@ body {
     text-align: center;
     background-color: $page-color;
     color: white;
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Fredoka One', cursive;
     font-size: 32px;
 }
 header {
     display: flex;
     justify-content: center;
+    .header {
+        max-width: 400px;
+        margin-bottom:-60px;
+    }
 }
 h1 {
     font-size: 64px;
@@ -112,13 +116,13 @@ input[type=color]{
 
 
 input[type=submit]:hover {
-    background-color: orange;
+    background-color: #560096;
 }
 
 input[type=submit] {
     padding: 10px 20px;
     background-color: transparent;
-    border: 1px solid orange;
+    border: 1px solid #560096;
     font-size: 20px;
     color: white;
     border-radius: 10px;

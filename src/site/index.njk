@@ -9,7 +9,7 @@
     <form name="greeting-card" method="POST" action="/new" class="flex-container" >
         <div class="greeting-form">
                 <p>
-                    <label for="message">Riddle</label>
+                    <label for="message">Your Riddle</label>
                     <textarea cols="24" rows="10" id="riddle" name="riddle"></textarea>
                 </p>
                 <p>
@@ -19,7 +19,7 @@
                         <img style="display: none; width: 100%;" id="image-preview" />
                 </p>
                 <p>
-                    <div id="loading" style="display:none; margin-bottom: 5px;">Laster opp bilde...</div>
+                    <div id="loading" style="display:none; margin-bottom: 5px;">Uploading picture...</div>
                     <input id="submit-btn" type="submit" value="GET MY QR CODE">
                 </p>
         </div>
@@ -30,7 +30,6 @@
 {% block scripts %}
 {%set js%}
 {% include "js/core.js" %}
-{% include "js/colorPicker.js" %}
 {% include "js/fileUploader.js" %}
 {% endset %}
 <script> {{js | safe}} </script>
