@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "start": "npm run dev",
-    "dev": "cross-env ELEVENTY_ENV=dev eleventy --serve",
+    "dev": "cross-env ELEVENTY_ENV=dev eleventy",
     "build": "cross-env ELEVENTY_ENV=prod eleventy"
   },
   "keywords": [],

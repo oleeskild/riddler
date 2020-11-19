@@ -1,3 +1,5 @@
+const riddlrLogo = require('./riddlrLogoTemplate.js');
+
 module.exports = ({riddle, riddlePath, hostName, imageLink }) => {
     return `
     
@@ -7,12 +9,16 @@ module.exports = ({riddle, riddlePath, hostName, imageLink }) => {
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="/css/styles.css" />
-        <title>Riddler</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"> 
+        <title>🎩Riddlr</title>
       </head>
       <body>
         <div class="container">
           <header>
-            <h1 class="title">Riddlr</h1>
+            <div class="header">
+              ${riddlrLogo()}
+            </div>
           </header>
     
           <div class="flex-container">
