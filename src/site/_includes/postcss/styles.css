@@ -7,7 +7,7 @@ body {
     text-align: center;
     background-color: $page-color;
     color: white;
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Bangers', cursive;
     font-size: 32px;
 }
 header {
@@ -128,10 +128,11 @@ input[type=submit] {
     padding: 10px 20px;
     background-color: transparent;
     border: 1px solid #560096;
-    font-size: 20px;
     color: white;
     border-radius: 10px;
     cursor: pointer;
+    font-family: 'Bangers', cursive;
+    font-size: 32px;
 }
 
 label {
