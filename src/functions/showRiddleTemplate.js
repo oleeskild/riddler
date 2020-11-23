@@ -11,7 +11,7 @@ module.exports = ({riddle, riddlePath, hostName, imageLink }) => {
         <link rel="stylesheet" href="/css/styles.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-        <title>🎩Riddlr</title>
+        <title>Riddlr</title>
       </head>
       <body>
         <div class="container">
