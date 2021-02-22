@@ -33,7 +33,7 @@ module.exports = ({riddle, riddlePath, hostName, imageLink }) => {
                 </div>
                 <div class="greeting-card">
                     <div class="message">${riddle}</div>
-                    ${imageLink ? '<img style="width: 100%;" src="' + imageLink + '" />' : ''}
+                    ${imageLink ? '<img style="width: 100%; max-width: 500px" src="' + imageLink + '" />' : ''}
                 </div>
             </div>
           </div>
