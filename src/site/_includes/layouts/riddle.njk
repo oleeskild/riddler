@@ -11,7 +11,7 @@
                 <div class="greeting-card">
                     <div class="message">{{item.data.riddle}}</div>
                     {% if item.data.imageLink.length > 0 %}
-                        <img style="width: 100%;" src="{{item.data.imageLink}}" />
+                        <img style="width: 100%; max-width: 500px;" src="{{item.data.imageLink}}" />
                     {% endif %} 
                 </div>
             </div>
